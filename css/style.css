@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 1200PX;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0;
+}
+
+.card{
+    background: linear-gradient( blue , white );
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+    flex-grow: 1;
+
+}
+
+.card img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.skitka{
+    background-color: orange;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.muddat{
+    background-color: orange;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 170px;
+    left: 10px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.card:hover .muddat{
+    opacity: 1;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+header{
+    background: linear-gradient(blue , white);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
